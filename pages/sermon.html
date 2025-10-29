@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sermon</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-['Roboto_Condensed',sans-serif]">
+    <header class="bg-[#0D0D0D] pt-4 pb-4 sm:pt-3 sm:pb-3 pl-5 pr-5" >
+      <div
+        class="flex items-center justify-between relative 2xl:max-w-[1320px] 2xl:ml-auto mr-auto"
+      >
+        <!-- Logo -->
+
+        <a href="index.html">
+          <img src="../images/logo.svg" alt="logo" />
+        </a>
+
+        <span
+          class="hidden lg:block w-0.5 bg-white h-20 absolute left-[196px] opacity-40"
+        ></span>
+
+        <nav
+          class="text-white absolute left-[260px] justify-end text-[16px] hidden lg:flex gap-[30px]"
+        >
+          <a href="../index.html">Home</a>
+          <a href="../pages/about.html">About us</a>
+          <a href="../pages/sermon.html">Sermon</a>
+          <a href="../pages/blog.html">Blog</a>
+        </nav>
+
+        <a
+          href="../pages/contact.html"
+          class="hidden sm:flex items-center justify-center text-[18px] text-blck border-[#FFD2A4] w-[180px] h-14 bg-[#FFD2A4] border rounded-xl"
+        >
+          Contact us
+        </a>
+
+        <!-- burger-menu -->
+        <label
+          for="bars"
+          class="absolute right-0 top-0 peer-checked:[&~.burger-menu]:translate-x-0 sm:relative lg:hidden"
+        >
+          <img src="../images/bars.png" alt="bars" />
+        </label>
+        <input class="peer" type="checkbox" id="bars" hidden />
+        <label
+          for="bars"
+          class="peer-checked:block fixed inset-0 hidden"
+        ></label>
+        <div
+          class="burger-menu fixed top-0 left-0 w-[300px] peer-checked:shadow-2xl peer-checked:shadow-black peer-checked:translate-x-0 -translate-x-full h-screen bg-white flex flex-col gap-[30px] p-5 rounded-r-xl"
+        >
+          <nav class="flex flex-col gap-2.5">
+            <a
+              href="../pages/home.html"
+              class="text-[20px] text-black font-bold active:border-b-red-500"
+              >Home</a
+            >
+            <a
+              href="../pages/about.html"
+              class="text-[20px] text-black font-bold active:border-b-red-500"
+              >About us</a
+            >
+            <a
+              href="../pages/sermon.html"
+              class="text-[20px] text-black font-bold active:border-b-red-500"
+              >Sermon</a
+            >
+            <a
+              href="../pages/blog.html"
+              class="text-[20px] text-black font-bold active:border-b-red-500"
+              >Blog</a
+            >
+          </nav>
+
+          <a
+            href="../pages/contact.html"
+            class="text-[18px] text-black border-[#FFD2A4] pt-5 pb-5 pl-12 pr-12 bg-[#FFD2A4] border-2 rounded-xl"
+          >
+            Contact us
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer class="bg-[#161722] w-full p-5">
+      <div class="flex flex-col items-start lg:flex-row lg:justify-between 2xl:max-w-7xl 2xl:ml-auto 2xl:mr-auto">
+        <div class="mb-5">
+          <a href="../index.html">
+            <img src="../images/footer-logo.svg" alt="footer-logo" />
+          </a>
+          <p class="text-[12px] text-white mt-5 mb-5">
+            © Copyright Finsweet 2022
+          </p>
+          <p class="text-[12px] text-white mb-1">(480) 555-0103</p>
+          <p class="text-[12px] text-white mb-1">4517 Washington Ave.</p>
+          <p class="text-[12px] text-white">finsweet@example.com</p>
+        </div>
+
+        <span class="w-full h-px bg-white lg:hidden"></span>
+
+        <nav class="flex flex-col mt-5 lg:flex-row lg:gap-[72px]">
+          <li class="list-none flex flex-col">
+            <p class="text-[16px] text-white mb-5">Quicklinks</p>
+            <a class="text-[15px] text-white mb-1" href="../pages/about.html"
+              >About us</a
+            >
+            <a class="text-[15px] text-white mb-1" href="../pages/sermon.html"
+              >Sermon</a
+            >
+            <a
+              class="text-[15px] text-white mb-1"
+              href="../pages/sermon-event.html"
+              >Events</a
+            >
+            <a class="text-[15px] text-white mb-1 lg:mb-0" href="../pages/blog.html"
+              >blog</a
+            >
+          </li>
+          <li class="list-none flex flex-col lg:items-start lg:justify-start">
+            <p class="text-[18px] text-white mt-5 lg:mt-0 mb-5">Connect</p>
+            <div class="flex gap-5 mb-5">
+              <a href="#" target="_blank">
+                <img src="../images/facebook.svg" alt="facebook" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="../images/twitter.svg" alt="twitter" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="../images/interin.png" alt="interin" />
+              </a>
+            </div>
+          </li>
+        </nav>
+
+        <span class="w-full h-px bg-white lg:hidden"></span>
+
+        <div >
+          <h2 class="text-[32px] text-white mb-8 mt-5">
+            Subscribe to get Latest Updates and News
+          </h2>
+          <form
+            action="https://formspree.io/f/mjkajvvy"
+            method="POST"
+            class="flex flex-col md:flex-row"
+          >
+            <input
+              type="email"
+              class="pt-5 md:rounded-tr-none md:rounded-br-none pb-5 text-[16px] text-white pl-5 pr-[156px] rounded-xl border border-white/15 mb-5"
+              name="email"
+              id="email"
+              readonly
+              placeholder="Yourmail@gmail.com"
+            />
+            <button
+              type="submit"
+              class="flex md:rounded-tl-none md:rounded-bl-none self-star pt-5 pb-5 h-fit pr-[68px] w-fit text-black uppercase border border-[#FFD2A4] bg-[#FFD2A4] text-[16px] rounded-xl pl-[68px]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
