@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Church</title>
+    <title>Church | Home</title>
     <link rel="stylesheet" href="./css/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="font-['Roboto_Condensed',sans-serif]">
-    <header class="bg-[#0D0D0D] pt-4 pb-4 sm:pt-3 sm:pb-3 pl-5 pr-5" >
+  <body class="font-['Roboto_Condensed',sans-serif] h-full flex flex-col">
+    <header class="bg-[#0D0D0D] pt-4 pb-4 2xl:pr-0 pr-5 sm:pt-3 sm:pb-3" >
       <div
-        class="flex items-center justify-between relative 2xl:max-w-[1320px] 2xl:ml-auto mr-auto"
+        class="flex items-center justify-between relative pl-5 pr-5 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto"
       >
         <!-- Logo -->
 
@@ -21,14 +21,12 @@
           <img src="./images/logo.svg" alt="logo" />
         </a>
 
-        <span
-          class="hidden lg:block w-0.5 bg-white h-20 absolute left-[196px] opacity-40"
-        ></span>
+        <span class="hidden lg:block w-0.5 bg-white h-20 absolute left-[196px] opacity-40"></span>
 
         <nav
           class="text-white absolute left-[260px] justify-end text-[16px] hidden lg:flex gap-[30px]"
         >
-          <a href="./pages/home.html">Home</a>
+          <a href="./index.html">Home</a>
           <a href="./pages/about.html">About us</a>
           <a href="./pages/sermon.html">Sermon</a>
           <a href="./pages/blog.html">Blog</a>
@@ -49,10 +47,7 @@
           <img src="./images/bars.png" alt="bars" />
         </label>
         <input class="peer" type="checkbox" id="bars" hidden />
-        <label
-          for="bars"
-          class="peer-checked:block fixed inset-0 hidden"
-        ></label>
+        <label for="bars" class="peer-checked:block fixed inset-0 hidden"></label>
         <div
           class="burger-menu fixed top-0 left-0 w-[300px] peer-checked:shadow-2xl peer-checked:shadow-black peer-checked:translate-x-0 -translate-x-full h-screen bg-white flex flex-col gap-[30px] p-5 rounded-r-xl"
         >
@@ -89,17 +84,330 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="grow">
+      <!-- Hero -->
 
-    <footer class="bg-[#161722] w-full p-5">
-      <div class="flex flex-col items-start lg:flex-row lg:justify-between 2xl:max-w-7xl 2xl:ml-auto 2xl:mr-auto">
+      <section  class="bg-[url(../images/hero-bg.svg)] bg-center bg-no-repeat bg-cover">
+        <div class="p-5 md:pt-32 md:pb-32 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto">
+          <div>
+            <p class="text-[12px] lg:mb-4 text-white mb-3 md:text-[16px]">Welcome to our CHURCH</p>
+            <h1
+              class="text-[40px] lg:mb-8 lg:text-[64px] leading-none text-white mb-5 md:text-[55px]"
+            >
+              Become a part of <br />
+              our community
+            </h1>
+            <a
+              href="#"
+              class="text-[16px] hover:text-white lg:pt-6 lg:pb-6 lg:pl-16 lg:pr-16 lg:text-[18px] lg:mb-16 border border-[#FFD2A4] pt-3 pb-3 pr-10 pl-10 inline-block mb-5 rounded-xl text-black hover:bg-transparent bg-[#FFD2A4]"
+              >Learn more</a
+            >
+            <div class="flex flex-col items-start sm:flex-row sm:items-center">
+              <span class="w-10 h-0.5 bg-[#FFD2A4] mb-5 sm:w-[18px] sm:mb-0 sm:mr-2"></span>
+              <p class="text-white text-[12px] lg:text-[18px]">
+                Find peace, hope, and a meaningful path. <br />
+                You are welcome here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Headline -->
+
+      <section class="pt-32 pb-32 pl-5 pr-5" >
+        <div class="2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto">
+          <div class="text-center">
+            <p class="text-[16px] uppercase mb-4 text-[#161722]">sub-headline</p>
+            <h2 class="text-[30px] pb-16 font-bold uppercase text-[#1617722] md:text-[48px]">
+              a church that's relevant
+            </h2>
+          </div>
+          <ul class="flex flex-col gap-6 lg:flex-row">
+            <li class="bg-[#FFF5EB] pt-20 pr-16 pl-16 pb-16 border-b-16 border-[#FFD2A4]">
+              <span
+                class="w-12 rounded-[50%] flex items-center justify-center min-h-12 mb-5 bg-[#FFD2A4]"
+                ><img src="./images/headline-img_1.svg" alt="headline-img"
+              /></span>
+              <h3 class="text-[28px] mb-2 uppercase font-bold">About us</h3>
+              <p class="text-[#161722 text-[16px]">
+                We are a welcoming faith community dedicated to helping people grow spiritually,
+                build meaningful relationships, and live with purpose.
+              </p>
+            </li>
+            <li class="bg-[#FFF5EB] pt-20 pr-16 pl-16 pb-16 border-b-16 border-[#FFD2A4]">
+              <span
+                class="w-12 rounded-[50%] flex items-center justify-center min-h-12 mb-5 bg-[#FFD2A4]"
+                ><img src="./images/headline-img_2.svg" alt="headline-img"
+              /></span>
+              <h3 class="text-[28px] mb-2 uppercase font-bold">Get involved</h3>
+              <p class="text-[#161722 text-[16px]">
+                Join our ministries, volunteer teams, and events to connect with others and make a
+                positive impact within our church and local community.
+              </p>
+            </li>
+            <li class="bg-[#FFF5EB] pt-20 pr-16 pl-16 pb-16 border-b-16 border-[#FFD2A4]">
+              <span
+                class="w-12 rounded-[50%] flex items-center justify-center min-h-12 mb-5 bg-[#FFD2A4]"
+                ><img src="./images/headline-img_3.svg" alt="headline-img"
+              /></span>
+              <h3 class="text-[28px] mb-2 uppercase font-bold">Giving back</h3>
+              <p class="text-[#161722 text-[16px]">
+                Through service, generosity, and compassion, we support those in need and work
+                together to bring hope and kindness to the world.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Compassion -->
+
+      <section class="pb-32" >
+        <div
+          class="p-5 flex flex-col items-center justify-center 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto"
+        >
+          <div class="text-center relative">
+            <p class="text-[16px] mb-4 text-[#161722]">SUB-HEADLINE</p>
+            <h2 class="text-[#161722] text-[32px] uppercase mb-8">love and compassion</h2>
+            <p class="text-[#161722] text-center text-[16px] mb-[50px]">
+              At our church, we believe in showing kindness, offering hope, and supporting one
+              <br class="hidden lg:block" />
+              another through every season of life. With open hearts and open doors, we grow<br
+                class="hidden lg:block"
+              />
+              together in faith, compassion, and community.
+            </p>
+            <a
+              class="bg-[#FFD2A4] pt-6 pb-6 pr-16 pl-16 inline-block rounded-xl text-[16px] text-[#1C1D28]"
+              href="./pages/about.html"
+              >Read more</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col gap-6 max-w-[375px] mb-6 justify-center items-center lg:flex-row lg:items-start relative 2xl:flex-nowrap"
+          >
+            <img src="./images/Compassion-img_1.png" alt="Compassion" class="lg:w-[300px]" />
+            <img
+              src="./images/Compassion-img_2.png"
+              alt="Compassion"
+              class="lg:w-[400px] lg:relative lg:top-12"
+            />
+            <img src="./images/Compassion-img_3.png" alt="Compassion" class="lg:w-[300px]" />
+          </div>
+
+          <div class="text-center">
+            <p class="text-[#161722] text-[16px] uppercase mb-4">our mission & vision</p>
+            <h2 class="text-[32px] mb-4 text-[#161722] uppercase font-bold">celebrate WITH US</h2>
+            <p class="text-[16px] text-[#161722] mb-4">
+              At our church, we believe in showing kindness, offering hope, and supporting one<br
+                class="hidden lg:block"
+              />
+              another through every season of life.
+            </p>
+            <a
+              class="flex items-center justify-center gap-2.5 text-[14px]"
+              href="./pages/about.html"
+              >Read more <img src="./images/right-img.png" class="w-[18px]" alt="right" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Listen -->
+
+      <section class="bg-[#F5F2F0] pt-32 pb-32" >
+        <div
+          class="flex flex-col items-center justify-between 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto"
+        >
+          <div class="text-center mb-[63px]">
+            <p class="text-[16px] mb-5 text-[#161722]">Watch and listen</p>
+            <h2 class="text-[#161722] text-[28px] font-bold md:text-[45px]">
+              Watch and listen THE benefits of <br />
+              joining our church
+            </h2>
+          </div>
+          <ul
+            class="flex flex-col gap-6 p-5 justify-center items-center lg:flex-row lg:items-start md:flex-row xl:p-0 md:justify-start xl:flex-nowrap md:flex-wrap"
+          >
+            <li
+              class="bg-[url(../images/listen-img_1.png)] max-w-[300px] min-h-96 bg-center bg-cover bg-no-repeat flex flex-col justify-end p-8 w-full"
+            >
+              <div>
+                <h3 class="text-[#FFFFFF] text-2xl mb-4">WATCH AND LISTEN TO OUR SERMONS</h3>
+                <p class="text-[16px] text-[#ffffff82]">
+                  Experience heartfelt messages that inspire faith and strengthen your spirit.
+                </p>
+              </div>
+            </li>
+            <li
+              class="bg-[url(../images/listen-img_2.png)] max-w-[300px] min-h-96 bg-center bg-cover bg-no-repeat flex flex-col justify-end p-8 w-full"
+            >
+              <div>
+                <h3 class="text-[#FFFFFF] text-2xl">Spiritual wisdom.</h3>
+              </div>
+            </li>
+            <li
+              class="bg-[url(../images/listen-img_3.png)] max-w-[300px] min-h-96 bg-center bg-cover bg-no-repeat flex flex-col justify-end p-8 w-full"
+            >
+              <div>
+                <h3 class="text-[#FFFFFF] text-2xl">Guided learning.</h3>
+              </div>
+            </li>
+            <li
+              class="bg-[url(../images/listen-img_4.png)] max-w-[300px] min-h-96 bg-center bg-cover bg-no-repeat flex flex-col justify-end p-8 w-full"
+            >
+              <div>
+                <h3 class="text-[#FFFFFF] text-2xl">Faithful inspiration.</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sermons  -->
+       
+      <section class="pb-32" >
+        <div class="p-5 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto">
+          <div class="text-center">
+            <p class="text-[#161722] mb-4 uppercase">Upcoming SERMONS</p>
+            <h2 class="text-[#161722] mb-16 text-[24px] uppercase font-bold lg:text-[48px]">
+              join us and become part of something great
+            </h2>
+          </div>
+          <div class="flex flex-col-reverse lg:flex-row lg:items-start lg:justify-center">
+            <div class="bg-[#FFF5EB] pt-[60px] p-10 relative 2xl:max-w-[435px] 2xl:w-full">
+              <span class="text-[24px] uppercase absolute top-[35px] text-end right-10">
+                20 <br />
+                <span>july</span>
+              </span>
+              <p class="text-[#DC9853] text-[12px] font-bold mb-4 uppercase">Upcoming Event</p>
+              <h3 class="text-[#161722] text-[24px] font-bold mb-4">
+                WATCH AND LISTEN <br />
+                TO OUR SERMONS
+              </h3>
+              <p class="text-[#161722] text-[16px] mb-8">
+                Listen to the word of God, your life will change.
+              </p>
+              <div>
+                <div class="flex items-start gap-4 mb-4">
+                  <img src="./images/clock-img.svg" alt="clock" />
+                  <p class="text-[#161722] text-[16px]">
+                    Friday <time datetime="23:39"> 23:39 </time> IST <br />
+                    Saturday <time datetime="11:20">11:20</time> ISD
+                  </p>
+                </div>
+                <div class="flex items-start gap-4 mb-8">
+                  <img src="./images/search-img.svg" alt="search" />
+                  <address class="text-[#161722] text-[16px]">
+                    No 233 Main St. New York,<br />
+                    United States
+                  </address>
+                </div>
+              </div>
+              <a
+                href="./pages/contact.html"
+                class="pt-5 pb-5 pl-16 pr-16 inline-block bg-[#161722] border border-transparent rounded-xl text-white mb-16 hover:bg-transparent hover:border-[#161722] hover:text-black"
+                >Register</a
+              >
+            </div>
+            <img
+              src="./images/sermon-right.png"
+              class="lg:max-w-[640px] 2xl:max-w-full lg:w-full lg:h-[550px]"
+              alt="sermons-right"
+            />
+          </div>
+          <a
+            href="./pages/sermon.html"
+            class="mt-12 flex items-center justify-end gap-[11px] text-[24px]"
+            >View all Sermons <img src="./images/right-img.png" class="w-8" alt="right"
+          /></a>
+        </div>
+      </section>
+
+      <!-- Quote  -->
+      <section
+        class="bg-[url(../images/quot-background.svg)] pt-32 w-full bg-no-repeat bg-cover pb-32 p-5 flex justify-center"
+        hidden
+      >
+        <div
+          class="flex flex-col items-center justify-center bg-[#FFFFFF] p-5 border-b-16 border-[#FFD2A4] max-w-[400px] md:flex-row md:max-w-3xl md:p-[70px]"
+        >
+          <div>
+            <h2 class="text-black text-[30px] font-bold">We want to serve the world around us</h2>
+            <p class="text-[16px] text-black mb-4">
+              Strengthening our community and making positive changes.
+            </p>
+            <a
+              href="#"
+              class="mb-7 inline-block uppercase border border-transparent p-6 pl-16 pr-16 bg-[#FFD2A4] hover:border-[#FFD2A4] hover:bg-transparent text- rounded-xl"
+              >Visit</a
+            >
+          </div>
+          <img src="./images/quote-img.png" class="mb-7 md:ml-[117px]" alt="quote" />
+        </div>
+      </section>
+
+      <!-- Our Blog -->
+
+      <section class="pb-32">
+        <div class="p-5 flex flex-col items-centerc 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto">
+          <div class="text-center">
+            <p class="text-[#161722] text-[16px] mb-4">Read our Blog</p>
+            <h2 class="text-[#161722] text-[32px] mb-16 font-bold">SHARE, INSPIRE, INNOVATE</h2>
+          </div>
+          <ul class="flex flex-col gap-6 p-5 justify-center items-center lg:flex-row lg:items-start md:flex-row xl:p-0 md:justify-start xl:flex-nowrap md:flex-wrap">
+            <li class="max-w-[300px] min-h-[364px] border-b-16 border-transparent cursor-pointer rounded-t-xl hover:border-[#FFD0A0] flex flex-col justify-start p-5 w-full bg-[#FFF5EB]">
+              <p class="text-[16px] text-[#DC9853] mb-4">Relationship</p>
+              <h3 class="text-[24px] mb-4 text-[#161722] font-bold">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="text-[#161722] text-[16px] font-medium mb-12">Lways to keep faith strong in life.</p>
+              <span class="text-[16px] ">
+                By Hojimurod domla <br />
+                Tuesday 13 May, 2021
+              </span>
+            </li>
+            <li class="max-w-[300px] min-h-[364px] border-b-16 border-transparent cursor-pointer rounded-t-xl hover:border-[#FFD0A0] flex flex-col justify-start p-5 w-full bg-[#FFF5EB]">
+              <p class="text-[16px] text-[#DC9853] mb-4">FAITH</p>
+              <h3 class="text-[24px] mb-4 text-[#161722] font-bold">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="text-[#161722] text-[16px] font-medium mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <span class="text-[16px] ">
+                By Akmal Qodirov <br />
+                Tuesday 14 May, 2021
+              </span>
+            </li>
+            <li class="max-w-[300px] min-h-[364px] border-b-16 border-transparent cursor-pointer rounded-t-xl hover:border-[#FFD0A0] flex flex-col justify-start p-5 w-full bg-[#FFF5EB]">
+              <p class="text-[16px] text-[#DC9853] mb-4">COMMUNITY</p>
+              <h3 class="text-[24px] mb-4 text-[#161722] font-bold">Community and togetherness — join us.</h3>
+              <p class="text-[#161722] text-[16px] font-medium mb-12">It's about strengthening community life and helping each other.</p>
+              <span class="text-[16px] ">
+                By Dilnoza Ubaydullayeva <br />
+                Tuesday 13 May, 2021
+              </span>
+            </li>
+            <li class="max-w-[300px] min-h-[364px] border-b-16 border-transparent cursor-pointer rounded-t-xl hover:border-[#FFD0A0] flex flex-col justify-start p-5 w-full bg-[#FFF5EB]">
+              <p class="text-[16px] text-[#DC9853] mb-4">Relationship</p>
+              <h3 class="text-[24px] mb-4 text-[#161722] font-bold">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="text-[#161722] text-[16px] font-medium mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <span class="text-[16px] ">
+                By Mathew Johnson <br />
+                Tuesday 13 May, 2021
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#161722] w-full p-5" >
+      <div
+        class="flex flex-col items-start lg:flex-row lg:justify-between 2xl:max-w-[1320px] 2xl:ml-auto 2xl:mr-auto"
+      >
         <div class="mb-5">
           <a href="index.html">
             <img src="./images/footer-logo.svg" alt="footer-logo" />
           </a>
-          <p class="text-[12px] text-white mt-5 mb-5">
-            © Copyright Finsweet 2022
-          </p>
+          <p class="text-[12px] text-white mt-5 mb-5">© Copyright Finsweet 2022</p>
           <p class="text-[12px] text-white mb-1">(480) 555-0103</p>
           <p class="text-[12px] text-white mb-1">4517 Washington Ave.</p>
           <p class="text-[12px] text-white">finsweet@example.com</p>
@@ -110,20 +418,10 @@
         <nav class="flex flex-col mt-5 lg:flex-row lg:gap-[72px]">
           <li class="list-none flex flex-col">
             <p class="text-[16px] text-white mb-5">Quicklinks</p>
-            <a class="text-[15px] text-white mb-1" href="./pages/about.html"
-              >About us</a
-            >
-            <a class="text-[15px] text-white mb-1" href="./pages/sermon.html"
-              >Sermon</a
-            >
-            <a
-              class="text-[15px] text-white mb-1"
-              href="./pages/sermon-event.html"
-              >Events</a
-            >
-            <a class="text-[15px] text-white mb-1 lg:mb-0" href="./pages/blog.html"
-              >blog</a
-            >
+            <a class="text-[15px] text-white mb-1" href="./pages/about.html">About us</a>
+            <a class="text-[15px] text-white mb-1" href="./pages/sermon.html">Sermon</a>
+            <a class="text-[15px] text-white mb-1" href="./pages/sermon-event.html">Events</a>
+            <a class="text-[15px] text-white mb-1 lg:mb-0" href="./pages/blog.html">blog</a>
           </li>
           <li class="list-none flex flex-col lg:items-start lg:justify-start">
             <p class="text-[18px] text-white mt-5 lg:mt-0 mb-5">Connect</p>
@@ -143,12 +441,10 @@
 
         <span class="w-full h-px bg-white lg:hidden"></span>
 
-        <div >
-          <h2 class="text-[32px] text-white mb-8 mt-5">
-            Subscribe to get Latest Updates and News
-          </h2>
+        <div>
+          <h2 class="text-[32px] text-white mb-8 mt-5">Subscribe to get Latest Updates and News</h2>
           <form
-            action="ttps://formspree.io/f/mjkajvvy"
+            action="https://formspree.io/f/mjkajvvy"
             method="POST"
             class="flex flex-col md:flex-row"
           >
@@ -157,7 +453,7 @@
               class="pt-5 md:rounded-tr-none md:rounded-br-none pb-5 text-[16px] text-white pl-5 pr-[156px] rounded-xl border border-white/15 mb-5"
               name="email"
               id="email"
-              readonly
+              required
               placeholder="Yourmail@gmail.com"
             />
             <button
